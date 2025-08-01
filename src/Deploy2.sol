@@ -3,12 +3,6 @@ pragma solidity ^0.8.13;
 
 import "./Counter.sol";
 
-interface Hevm {
-    function ffi(string[] calldata) external returns (bytes memory);
-}
-
-Hevm constant vm = Hevm(0x7109709ECfa91a80626fF3989D68f67F5b1DD12D);
-
 contract Deploy2 {
     Counter c;
 
